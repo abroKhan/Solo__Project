@@ -1,0 +1,146 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+    color: black;
+}
+
+/* Utillity Classes */
+:root {
+    --red: #E63946;
+    --light: #F1FAEE;
+    --aqua: #A8DADC;
+    --lightBlue: #457B9D;
+    --darkBlue: #1D3557;
+    --secondy_heading: 20px;
+}
+
+.primary__heading {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.secondry__heading {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--light);
+}
+
+/* Hero Section Starts */
+.hero {
+    background: url("/Images/hero_img.jpg") no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    background: var(--darkBlue);
+    color: var(--light);
+    border-radius: 6px;
+    padding: 7px 15px;
+}
+
+.hero p {
+    background: var(--lightBlue);
+    border-radius: 6px;
+    padding: 4px 8px;
+    margin: 0 6px;
+}
+
+/* Hero Section Ends */
+
+/* Activities Section Starts */
+.activities {
+    display: flex;
+    padding: 50px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.content {
+    width: 250px;
+    padding: 10px;
+}
+
+.content__img {
+    width: 160px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* Activities Section Ends */
+
+.guide {
+    padding: 0px 50px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 450px;
+    background: var(--aqua);
+    color: var(--darkBlue);
+    display: flex;
+    gap: 2rem;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 10px solid var(--lightBlue);
+    padding: 15px 25px;
+}
+
+.card__img {
+    width: 200px;
+    border-radius: 5px;
+}
+/* Guide Section Ends */
+
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* Meadia Querries */
+@media (max-width: 480px) {
+    .primary__heading {
+        font-size: 22px;
+    }
+
+    .secondry__heading {
+        font-size: 16px;
+    }
+
+    /* Hero Section */
+    .hero p {
+        padding: 0;
+        margin: 0 5px;
+    }
+
+    /* Guide Section */
+    .card {
+        width: 300px;
+        border-bottom: 10px solid var(--darkBlue);
+        padding: 10px;
+    }
+
+    .card__img {
+        width: 100px;
+    }
+
+    .card__content h1 {
+        font-size: 17px;
+        margin: 0;
+    }
+
+    .card__content h2 {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .card__content p {
+        font-size: 13px;
+        /* margin: 0; */
+    }
+
+}
